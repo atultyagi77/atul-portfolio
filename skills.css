@@ -1,0 +1,158 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 0;
+    display: block;
+}
+
+nav ul li a:hover {
+    color: #1e90ff;
+}
+
+.skillsSection {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.skillsSection h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.skill {
+    flex: 1 1 45%;
+    background-color: #fff;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.skill h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.skill ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skill ul li {
+    background-color: #f9f9f9;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footerSection {
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(22, 22, 98);
+    text-align: center;
+  }
+  
+  .footerSection h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .footerSection p {
+    margin: 10px 0;
+  }
+  
+  .footerSection a {
+    color: #6955c3;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footerSection a:hover {
+    color: #fff;
+  }
+  
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        display: none;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .skills-container {
+        flex-direction: column;
+    }
+
+    .skill {
+        flex: 1 1 100%;
+    }
+}

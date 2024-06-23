@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <title>Contact Me - Atul's Portfolio</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">Atul's Portfolio</a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav no-search">
+                <ul class="nav no-search">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/project.html">Projects</a></li>
+                    <li><a href="/skills.html">Skills</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+    
+                </ul>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="contact" class="contactSection">
+            <h1>Contact Me</h1>
+            <div class="contact-info">
+                <p>Phone: <a href="tel:+919458803120">9458803120</a></p>
+                <p>Email: <a href="mailto:tyagiatul23799@gmail.com?subject=Job%20Opportunity&body=Hello%20Atul,%0D%0A%0D%0AI'm%20interested%20in%20discussing%20a%20job%20opportunity%20with%20you.">tyagiatul23799@gmail.com</a></p>
+                <p>GitHub: <a href="https://www.github.com/atultyagi77" target="_blank">github.com/atultyagi77</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/atultyagi77" target="_blank">linkedin.com/in/atultyagi77</a></p>
+            </div>
+        </section>
+    </main>
+    <footer class="footerSection">
+        <p>&copy; 2024 Atul's Portfolio</p>
+    </footer>
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const nav = document.querySelector('nav ul');
+
+        mobileMenu.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
